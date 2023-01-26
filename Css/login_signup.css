@@ -1,0 +1,16 @@
+﻿body {
+    background-color: floralwhite;
+    text-align:center;
+}
+
+#login {
+    background-color: orangered;
+    height: 350px;
+    width: 400px;
+}
+
+#signup {
+    background-color: turquoise;
+    height: 350px;
+    width: 400px;
+}
