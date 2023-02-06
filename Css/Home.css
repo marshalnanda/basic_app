@@ -1,0 +1,17 @@
+﻿.options {
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    width: 200px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.details {
+    position: absolute;
+    right: 709px;
+    width: 200px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    top: 19px;
+}

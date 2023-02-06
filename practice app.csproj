@@ -106,12 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddMoney.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Css\Home.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -124,9 +126,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="WithdrawMoney.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Css\login_signup.css" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\CU1.jpg" />
     <Content Include="javascript\login_signip.js" />
     <Content Include="login_singup.aspx" />
     <Content Include="Registerationconfirmation.aspx" />
@@ -165,6 +169,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMoney.aspx.cs">
+      <DependentUpon>AddMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMoney.aspx.designer.cs">
+      <DependentUpon>AddMoney.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -180,6 +191,13 @@
     </Compile>
     <Compile Include="Registerationconfirmation.aspx.designer.cs">
       <DependentUpon>Registerationconfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page.Master.cs">
+      <DependentUpon>Master_Page.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page.Master.designer.cs">
+      <DependentUpon>Master_Page.Master</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
     <Compile Include="DBMain.cs" />
@@ -236,6 +254,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WithdrawMoney.aspx.cs">
+      <DependentUpon>WithdrawMoney.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WithdrawMoney.aspx.designer.cs">
+      <DependentUpon>WithdrawMoney.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,6 +269,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Master_Page.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Collections;
 
 namespace practice_app
 {
@@ -26,7 +27,15 @@ namespace practice_app
             //}
             if(DBMain.GetAuthentication(id, pass))
             {
+                ArrayList details = DBMain.Getdetails(id, pass);
+                Session["Name"] = details[0];
+                Session["p_no"] = details[1];
+                Session["balance"] = details[2];
+                //Session["Name"] = DBMain.Getdetails(id, pass)[0];
+                //Session["p_no"] = DBMain.Getdetails(id, pass)[1];
+                //Session["balance"] = DBMain.Getdetails(id, pass)[2];
                 Response.Redirect("Home.aspx");
+
             }
         }
 
